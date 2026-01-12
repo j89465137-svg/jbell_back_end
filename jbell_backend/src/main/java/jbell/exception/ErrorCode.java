@@ -115,15 +115,6 @@ public enum ErrorCode {
 	/** 사용자 정보 없음 */
 	USER_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 사용자입니다."),
 
-	/** 밴드 정보 없음 */
-	BAND_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 밴드입니다."),
-
-	/** 스튜디오 정보 없음 */
-	STUDIO_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 스튜디오입니다."),
-
-	/** 방 정보 없음 */
-	ROOM_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 방입니다."),
-
 	/** 게시글 정보 없음 */
 	POST_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 게시글입니다."),
 
@@ -133,26 +124,8 @@ public enum ErrorCode {
 	/** 답글 정보 없음 */
 	REPLY_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 답글입니다."),
 
-	/** 예약 정보 없음 */
-	RESERVATION_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 예약입니다."),
-
-	/** 결제 정보 없음 */
-	PAYMENT_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 결제 정보입니다."),
-
 	/** 파일 정보 없음 */
 	FILE_NOT_FOUND(HttpStatus.NOT_FOUND, "파일을 찾을 수 없습니다."),
-
-	/** 밴드 모집글 정보 없음 */
-	BAND_RECRUITMENT_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 밴드 모집글입니다."),
-
-	/** 게스트 모집글 정보 없음 */
-	GUEST_RECRUITMENT_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 게스트 모집글입니다."),
-
-	/** 공연 정보 없음 */
-	EVENT_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 공연입니다."),
-
-	/** 중고거래 게시글 정보 없음 */
-	TRADE_POST_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 중고거래 게시글입니다."),
 
 	/** 쪽지 정보 없음 */
 	MESSAGE_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 쪽지입니다."),
@@ -186,30 +159,6 @@ public enum ErrorCode {
 
 	/** 중복된 전화번호 */
 	DUPLICATE_PHONE_NUMBER(HttpStatus.CONFLICT, "이미 등록된 전화번호입니다."),
-
-	/** 중복된 밴드 이름 */
-	DUPLICATE_BAND_NAME(HttpStatus.CONFLICT, "이미 사용 중인 밴드 이름입니다."),
-
-	/** 중복된 스튜디오 이름 */
-	DUPLICATE_STUDIO_NAME(HttpStatus.CONFLICT, "이미 등록된 스튜디오 이름입니다."),
-
-	/** 이미 밴드 멤버로 가입됨 */
-	ALREADY_BAND_MEMBER(HttpStatus.CONFLICT, "이미 해당 밴드의 멤버입니다."),
-
-	/** 이미 신청 완료 */
-	ALREADY_APPLIED(HttpStatus.CONFLICT, "이미 신청하였습니다."),
-
-	/** 이미 스크랩 완료 */
-	ALREADY_SCRAPED(HttpStatus.CONFLICT, "이미 스크랩한 게시글입니다."),
-
-	/** 이미 좋아요 완료 */
-	ALREADY_LIKED(HttpStatus.CONFLICT, "이미 좋아요를 누른 게시글입니다."),
-
-	/** 예약 시간 충돌 */
-	RESERVATION_CONFLICT(HttpStatus.CONFLICT, "해당 시간에 이미 예약이 존재합니다."),
-
-	/** 일정 충돌 */
-	SCHEDULE_CONFLICT(HttpStatus.CONFLICT, "해당 시간에 이미 일정이 존재합니다."),
 
 	/** 이미 처리된 요청 (중복 처리 방지) */
 	ALREADY_PROCESSED(HttpStatus.CONFLICT, "이미 처리된 요청입니다."),
